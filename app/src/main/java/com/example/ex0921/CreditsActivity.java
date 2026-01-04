@@ -13,15 +13,15 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class CreditsActivity extends AppCompatActivity {
     Intent si;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_credits);
 
-        si = new Intent(this,CreditsActivity.class);
+        si = new Intent(this,MainActivity.class);
     }
 
     @Override
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.menuCtedits)
+        if (id == R.id.menuMain)
         {
             startActivity(si);
         }
