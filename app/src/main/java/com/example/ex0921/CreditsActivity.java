@@ -13,9 +13,24 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+/**
+ * @author David Yusupov <dy3722@bs.amalnet.k12.il>
+ * @version 1.0
+ * @since 4/1/2026
+ * A background color changer - credits
+ */
 public class CreditsActivity extends AppCompatActivity {
     Intent si;
 
+    /**
+     * Initializes the Credits activity.
+     * <p>
+     * This method sets the activity's layout to the credits screen and prepares
+     * an Intent to facilitate navigation back to the MainActivity.
+     *
+     * @param savedInstanceState If the activity is being re-initialized after previously
+     * being shut down then this Bundle contains the data it most recently supplied.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,12 +39,31 @@ public class CreditsActivity extends AppCompatActivity {
         si = new Intent(this,MainActivity.class);
     }
 
+    /**
+     * Initialize the contents of the Activity's standard options menu for the Credits screen.
+     * <p>
+     * This method inflates the menu resource (R.menu.main) and populates the menu
+     * for this activity, allowing users to access options from the credits page.
+     *
+     * @param menu The options menu in which you place your items.
+     * @return You must return true for the menu to be displayed; if you return false it will not be shown.
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main,menu);
         return super.onCreateOptionsMenu(menu);
     }
 
+    /**
+     * Handles action bar item clicks for the Credits activity.
+     * <p>
+     * This method intercepts clicks on the menu items. If the "Main" menu item
+     * is selected, it triggers the Intent to navigate back to the MainActivity.
+     *
+     * @param item The menu item that was selected.
+     * @return boolean Return false to allow normal menu processing to proceed,
+     * true to consume it here.
+     */
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();

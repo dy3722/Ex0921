@@ -18,6 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
+        android:onClick="onlyText"
         android:text="Only text" />
 
     <Space
@@ -30,6 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
+        android:onClick="textAndIcon"
         android:text="Text and icon" />
 
     <Space
@@ -42,6 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
+        android:onClick="textAndIconAndCancel"
         android:text="text, icon and cancel" />
 
     <Space
@@ -54,6 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
+        android:onClick="changeColor"
         android:text="Change color" />
 
     <Space
@@ -66,6 +70,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
+        android:onClick="changeColorOrReset"
         android:text="Change color or reset" />
 
     <Space
