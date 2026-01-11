@@ -69,7 +69,7 @@ public class CreditsActivity extends AppCompatActivity {
         int id = item.getItemId();
         if (id == R.id.menuMain)
         {
-            startActivity(si);
+            finish();
         }
 
         return super.onOptionsItemSelected(item);
