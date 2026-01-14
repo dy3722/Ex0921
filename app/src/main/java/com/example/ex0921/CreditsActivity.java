@@ -1,6 +1,5 @@
 package com.example.ex0921;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,13 +19,11 @@ import androidx.core.view.WindowInsetsCompat;
  * A background color changer - credits
  */
 public class CreditsActivity extends AppCompatActivity {
-    Intent si;
 
     /**
      * Initializes the Credits activity.
      * <p>
-     * This method sets the activity's layout to the credits screen and prepares
-     * an Intent to facilitate navigation back to the MainActivity.
+     * This method sets the activity's layout to the credits screen
      *
      * @param savedInstanceState If the activity is being re-initialized after previously
      * being shut down then this Bundle contains the data it most recently supplied.
@@ -35,8 +32,6 @@ public class CreditsActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credits);
-
-        si = new Intent(this,MainActivity.class);
     }
 
     /**
